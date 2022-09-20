@@ -1,4 +1,6 @@
 var add = require('./add');
+// import { add } from './add'
+// import add from './add'
 
 describe('add', () => {
     it('Ele deve somar num1 e num2 e dar num3', () => {
