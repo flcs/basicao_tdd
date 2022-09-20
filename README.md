@@ -26,7 +26,7 @@
 
 ## npx tsc --init 
 
-  "moduleDetection": "auto",                /* Control what method is used to detect module-format JS files. */
+  "target": "es5",                        /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
 
   "experimentalDecorators": true,         /* Enable experimental support for TC39 stage 2 draft decorators. */
   "emitDecoratorMetadata": true,          /* Emit design-type metadata for decorated declarations in source files. */
@@ -55,3 +55,15 @@
 
 
   "skipLibCheck": true                       /* Skip type checking all .d.ts files. */
+## babel
+
+npm install -D babel-jest babel-core regenerator-runtime @babel/preset-env
+
+## .babelrc
+
+{
+    "presets": [
+        "@babel/preset-env"
+    ]
+}
+
